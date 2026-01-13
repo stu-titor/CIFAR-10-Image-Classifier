@@ -104,7 +104,7 @@ torch.save(net.state_dict(), f'trained_net_{accuracy}.pth')
 # %%
 net = ImageNeuralNetwork().to(device)
 # net.load_state_dict(torch.load(f'trained_net_{accuracy}.pth'))
-# net.load_state_dict(torch.load('trained_net_85.8.pth'))
+net.load_state_dict(torch.load('trained_net_91.01.pth'))
 
 # %%
 new_transform = transforms.Compose([
