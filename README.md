@@ -18,7 +18,7 @@ The model (`CNN.py`) is a fully configurable deep CNN with the following default
 - **5 convolutional blocks**, each with Conv2d → BatchNorm → ReLU → MaxPool
 - Channels double at each block: 64 → 128 → 256 → 512 → 1024
 - **4 fully connected layers** with dropout (p=0.5) between each
-- Dynamically computed flattened size — no hardcoded magic numbers
+- Dynamically computed flattened size
 
 ```python
 net = ImageNeuralNetwork(
