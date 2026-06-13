@@ -65,7 +65,7 @@ Several techniques were combined to reach 91%:
 
 **Install dependencies**
 ```bash
-pip install torch torchvision pillow numpy
+pip install torch torchvision
 ```
 
 > If you're on an AMD GPU, also install `torch-directml`. Otherwise, replace `torch_directml.device()` with `torch.device('cuda')` or `torch.device('cpu')` in `main.py`.
