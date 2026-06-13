@@ -86,13 +86,9 @@ python main.py
 
 Training takes ~300 epochs. The model is saved as `trained_net_{accuracy}.pth` when complete.
 
-## Why 91%?
-
 Reaching 91% on CIFAR-10 without residual connections or attention mechanisms required careful stacking of regularization techniques. The key contributors:
 
 - **Cosine annealing** outperformed step-decay LR by ~1.5% in experiments
 - **Label smoothing** reduced overconfidence and improved generalization
 - **Random erasing** (cutout) was the single biggest augmentation boost
 - **Nesterov momentum** converged faster and more stably than vanilla SGD
-
-State-of-the-art on CIFAR-10 is ~99% (EfficientNet, ViT), but those use residual connections, attention, and orders of magnitude more parameters. This model achieves 91% with a simple sequential CNN — a strong baseline for a hand-designed architecture.
